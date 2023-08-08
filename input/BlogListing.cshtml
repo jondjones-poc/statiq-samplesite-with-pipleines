@@ -1,0 +1,13 @@
+﻿@model BlogListingViewModel
+
+<ul>
+    @foreach (var blog in Model.Blogs)
+    {
+        <li>
+
+            <a href="blog/@blog.Slug">
+                @blog.Title
+            </a>
+        </li>
+     }
+</ul>

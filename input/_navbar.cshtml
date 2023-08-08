@@ -1,0 +1,14 @@
+<li class="nav-item">
+    <a href="/" class="nav-link">
+        Home
+    </a>
+</li>
+
+@foreach (IDocument doc in Context.OutputPages.Where(x => x.GetBool("IsPage")).OrderBy(x => x.GetInt(Keys.Order))) {
+
+    <li class="nav-item">
+        <a href="@("/" + doc.Source.FileNameWithoutExtension)" class="nav-link">
+            @doc.GetTitle()
+       </a>
+    </li>
+}

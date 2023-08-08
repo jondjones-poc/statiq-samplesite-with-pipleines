@@ -1,0 +1,1044 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="input\**" />
+    <EmbeddedResource Remove="input\**" />
+    <None Remove="input\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Statiq.Web" Version="1.0.0-beta.58" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_ViewImports.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_navigation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_navbar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_header.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_footer.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\_global.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_typography.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_overlay.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_options.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_colors.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\sections\_post.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\sections\_masthead.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\sections\_footer.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\components\_navbar.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\components\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\components\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\js\scripts.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\css\all.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_utilities.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_type.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_transitions.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_tooltip.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_toasts.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_tables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_spinners.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_root.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_reboot.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_progress.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_popover.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_placeholders.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_pagination.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_offcanvas.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_navbar.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_nav.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_modal.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_mixins.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_maps.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_list-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_images.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_helpers.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_grid.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_functions.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_dropdown.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_containers.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_close.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_carousel.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_card.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_button-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_breadcrumb.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_badge.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_alert.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_accordion.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\vendor\_rfs.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\utilities\_api.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_visually-hidden.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_utilities.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_transition.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_text-truncate.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_table-variants.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_resize.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_reset-text.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_pagination.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_lists.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_list-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_image.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_grid.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_gradients.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_deprecate.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_container.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_color-scheme.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_clearfix.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_caret.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_breakpoints.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_box-shadow.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_border-radius.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_banner.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_backdrop.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_alert.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_vr.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_visually-hidden.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_text-truncation.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_stretched-link.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_stacks.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_ratio.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_position.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_colored-links.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_color-bg.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_clearfix.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_validation.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_labels.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_input-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-text.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-select.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-range.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-control.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-check.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_floating-labels.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\css\clean-blog.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\posts\two.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\posts\one.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\pages\home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\js\clean-blog.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\images\example.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\images\dummy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\Home.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\ultimate-flexibility.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\templating-choice.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\deployment-built-in.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\data-agility.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_ViewImports.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_navigation.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_navbar.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_header.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\_footer.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\_global.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_typography.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_overlay.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_options.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_colors.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\variables\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\sections\_post.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\sections\_masthead.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\sections\_footer.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\components\_navbar.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\components\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\scss\components\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\startbootstrap-clean-blog\js\scripts.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\fontawesome-free\css\all.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_utilities.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_type.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_transitions.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_tooltip.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_toasts.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_tables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_spinners.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_root.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_reboot.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_progress.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_popover.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_placeholders.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_pagination.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_offcanvas.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_navbar.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_nav.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_modal.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_mixins.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_maps.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_list-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_images.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_helpers.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_grid.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_functions.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_dropdown.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_containers.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_close.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_carousel.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_card.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_button-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_breadcrumb.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_badge.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_alert.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\_accordion.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\vendor\_rfs.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\utilities\_api.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_visually-hidden.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_utilities.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_transition.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_text-truncate.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_table-variants.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_resize.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_reset-text.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_pagination.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_lists.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_list-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_image.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_grid.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_gradients.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_forms.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_deprecate.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_container.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_color-scheme.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_clearfix.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_caret.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_buttons.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_breakpoints.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_box-shadow.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_border-radius.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_banner.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_backdrop.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\mixins\_alert.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_vr.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_visually-hidden.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_text-truncation.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_stretched-link.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_stacks.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_ratio.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_position.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_colored-links.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_color-bg.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\helpers\_clearfix.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_validation.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_labels.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_input-group.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-text.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-select.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-range.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-control.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_form-check.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\scss\forms\_floating-labels.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\css\clean-blog.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\posts\two.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\posts\one.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\pages\home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\js\clean-blog.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\images\example.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\images\dummy.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\Home.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\home.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\ultimate-flexibility.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\templating-choice.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\deployment-built-in.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="input\content\features\data-agility.md" />
+  </ItemGroup>
+
+</Project>

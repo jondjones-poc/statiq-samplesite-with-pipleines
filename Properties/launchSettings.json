@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JonDJones.DotNet.StaticSite": {
+      "commandName": "Project",
+      "commandLineArgs": "preview"
+    }
+  }
+}
